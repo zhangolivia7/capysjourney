@@ -134,17 +134,8 @@ function App() {
       <section className="px-6 py-16 md:py-24" style={{ background: brandCream }}>
         <div className="mx-auto max-w-6xl grid md:grid-cols-1 gap-10">
           <div className="flex justify-center">
-            <div className="w-[883px] h-[539px]">
-              <iframe
-                width="100%"
-                height="100%"
-                src="https://www.youtube.com/embed/Evm1Il_2dMk"
-                title="Capy's Journey Video"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-                className="rounded-lg"
-              ></iframe>
+            <div className="w-[883px] h-[539px] bg-neutral-300 flex items-center justify-center">
+              <span className="text-lg" style={{ color: 'black' }}>VIDEO</span>
             </div>
           </div>
           <p className="mx-auto max-w-[1163px] text-lg md:text-xl text-center" style={{ color: brandBrown }}>
@@ -157,13 +148,13 @@ function App() {
         <section className="px-6 py-16 md:py-24" style={{ background: brandCream }}>
           <div className="mx-auto max-w-6xl grid md:grid-cols-2 gap-10 items-center">
             <img src={Demo1} alt="Levels Screen" className="w-[631px] h-[630px] object-cover" />
-            <p className="text-2xl md:text-4xl text-right" style={{ color: brandBrown }}>Dozens of fun, expert-certified level to play and learn!</p>
+            <p className="text-3xl md:text-3xl text-right" style={{ color: brandBrown }}>Dozens of fun, expert-certified level to play and learn!</p>
           </div>
         </section>
 
         <section className="px-6 py-16 md:py-24" style={{ background: brandCream }}>
           <div className="mx-auto max-w-6xl grid md:grid-cols-2 gap-10 items-center">
-            <p className="text-2xl md:text-4xl" style={{ color: brandBrown }}>Choose from six unique, thematic regions to explore with Capy!</p>
+            <p className="text-2xl md:text-3xl" style={{ color: brandBrown }}>Choose from six unique, thematic regions to explore with Capy!</p>
             <div>
               <img src={Demo2} alt="Map Regions" className="w-[631px] h-[630px] object-cover" />
             </div>
@@ -173,7 +164,7 @@ function App() {
         <section className="px-6 py-16 md:py-24" style={{ background: brandCream }}>
           <div className="mx-auto max-w-6xl grid md:grid-cols-2 gap-10 items-center">
             <img src={Demo3} alt="Levels Screen" className="w-[631px] h-[630px] object-cover" />
-            <p className="text-2xl md:text-4xl text-right" style={{ color: brandBrown }}>Complete daily wellness activities for rewards or create your own meditation!</p>
+            <p className="text-2xl md:text-3xl text-right" style={{ color: brandBrown }}>Complete daily wellness activities for rewards or create your own meditation!</p>
           </div>
         </section>
 
@@ -181,7 +172,7 @@ function App() {
           <div className="mx-auto max-w-6xl">
             <div className="flex flex-col md:flex-row items-center gap-8">
               <img src={Demo4Left} alt="Customization Left" className="w-full max-w-[300px] h-auto object-contain" />
-              <p className="text-2xl md:text-4xl text-center flex-1" style={{ color: brandBrown }}>Give Capy a fresh fit and customize Capy's Den to your liking!</p>
+              <p className="text-2xl md:text-3xl text-center flex-1" style={{ color: brandBrown }}>Give Capy a fresh fit and customize Capy's Den to your liking!</p>
               <img src={Demo4Right} alt="Customization Right" className="w-full max-w-[300px] h-auto object-contain" />
             </div>
           </div>

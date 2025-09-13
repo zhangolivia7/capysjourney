@@ -134,17 +134,8 @@ function App() {
       <section className="px-6 py-16 md:py-24" style={{ background: brandCream }}>
         <div className="mx-auto max-w-6xl grid md:grid-cols-1 gap-10">
           <div className="flex justify-center">
-            <div className="w-[883px] h-[539px]">
-              <iframe
-                width="100%"
-                height="100%"
-                src="https://www.youtube.com/embed/Evm1Il_2dMk"
-                title="Capy's Journey Video"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-                className="rounded-lg"
-              ></iframe>
+            <div className="w-[883px] h-[539px] bg-neutral-300 flex items-center justify-center">
+              <span className="text-lg" style={{ color: 'black' }}>VIDEO</span>
             </div>
           </div>
           <p className="mx-auto max-w-[1163px] text-lg md:text-xl text-center" style={{ color: brandBrown }}>
