@@ -291,7 +291,7 @@ export default function App() {
             <div className="space-y-4">
               <div className="relative aspect-[9/19] bg-white rounded-3xl shadow-xl overflow-hidden">
                 <ImageWithFallback
-                  src="/src/assets/capy collection.png"
+                  src="/placeholder-screenshot-3.png"
                   alt="Capy's den"
                   className="w-full h-full object-cover"
                 />
