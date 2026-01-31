@@ -31,9 +31,12 @@ export default function Home() {
                 Begin your mindfulness journey with gamified meditation. Your adorable capybara companion guides you to daily wellness, one peaceful moment at a time.
               </p>
               
-              {/* Download Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4">
-                <a
+              {/* Download Buttons - coming soon */}
+              <div className="flex flex-col sm:flex-row gap-4 items-center">
+                <span className="inline-flex items-center justify-center px-8 py-4 bg-amber-100 text-amber-900 rounded-xl border-2 border-amber-200">
+                  Coming Soon
+                </span>
+                {/* <a
                   href="#"
                   className="inline-flex items-center justify-center rounded-xl hover:opacity-90 transition-opacity"
                   aria-label="Download on the App Store"
@@ -44,7 +47,6 @@ export default function Home() {
                     className="h-14 w-auto"
                   />
                 </a>
-                
                 <a
                   href="#"
                   className="inline-flex items-center justify-center rounded-xl hover:opacity-90 transition-opacity"
@@ -55,7 +57,7 @@ export default function Home() {
                     alt="Get it on Google Play"
                     className="h-14 w-auto"
                   />
-                </a>
+                </a> */}
               </div>
             </div>
             
@@ -321,10 +323,13 @@ export default function Home() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="flex items-center justify-center gap-3 px-8 py-4 bg-white text-gray-900 rounded-xl hover:bg-gray-50 transition-colors">
+            {/* <button className="flex items-center justify-center gap-3 px-8 py-4 bg-white text-gray-900 rounded-xl hover:bg-gray-50 transition-colors">
               <Download className="size-5" />
               <span>Download Now</span>
-            </button>
+            </button> */}
+            <span className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white/80 text-gray-600 rounded-xl border-2 border-white/50 cursor-default">
+              Coming Soon
+            </span>
             <button className="flex items-center justify-center gap-3 px-8 py-4 bg-transparent text-white border-2 border-white rounded-xl hover:bg-white/10 transition-colors">
               <Play className="size-5" />
               <span>Watch Demo</span>
