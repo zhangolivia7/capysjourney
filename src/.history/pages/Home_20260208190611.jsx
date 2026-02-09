@@ -76,7 +76,7 @@ export default function Home() {
                 <ImageWithFallback
                   src={logo}
                   alt="Logo Capy's Journey"
-                  className="rounded-3xl w-full"
+                  className="rounded-3xl w-full shadow-2xl"
                 />
               </div>
               {/* Decorative blobs */}
@@ -202,7 +202,7 @@ export default function Home() {
         </section>
 
         {/* Video Section */}
-        <section id="demo" className="py-20 bg-transparent">
+        <section className="py-20 bg-transparent">
           <div className="mx-auto max-w-5xl px-6">
             <AnimatedSection className="text-center mb-12" direction="up" delay={0}>
               <h2 className="text-4xl text-gray-900 mb-4">
@@ -340,7 +340,8 @@ export default function Home() {
             </button>
             <button 
               onClick={() => {
-                document.getElementById('demo')?.scrollIntoView({ behavior: 'smooth' });
+                const videoSection = document.querySelector('section:nth-of-type(3)');
+                videoSection?.scrollIntoView({ behavior: 'smooth' });
               }}
               className="flex items-center justify-center gap-3 px-8 py-4 bg-transparent text-white border-2 border-white rounded-xl hover:bg-white/10 transition-colors font-semibold"
             >
