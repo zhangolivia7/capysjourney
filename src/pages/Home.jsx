@@ -11,6 +11,7 @@ import logo from '../assets/LOGO.png';
 import lessonsImg from '../assets/lessons.png';
 import dailyImg from '../assets/daily.png';
 import capyCollectionImg from '../assets/capy collection.png';
+import capyLaunchVid from '../assets/CapyLaunchVid.mov';
 
 export default function Home() {
   const [isWaitlistModalOpen, setIsWaitlistModalOpen] = useState(false);
@@ -249,13 +250,13 @@ export default function Home() {
               />
 
               <div className="relative z-10 aspect-video rounded-3xl overflow-hidden shadow-2xl bg-black">
-                <iframe
-                  className="absolute inset-0 h-full w-full"
-                  src="https://www.youtube.com/embed/N2SEO5CvHEc"
+                <video
+                  className="absolute inset-0 h-full w-full object-contain"
+                  src={capyLaunchVid}
                   title="Capy's Journey demo video"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
+                  controls
+                  playsInline
+                  preload="metadata"
                 />
               </div>
             </AnimatedSection>
