@@ -1,15 +1,19 @@
-import { useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 
 export function useScrollAnimation(options = {}) {
   const [isVisible, setIsVisible] = useState(false);
-  const elementRef = useRef(null);
+  const [node, setNode] = useState(null);
+  const setRef = useCallback((el) => {
+    setNode(el);
+  }, []);
 
   useEffect(() => {
+    if (!node) return;
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true);
-          // Optionally disconnect after first intersection
           if (options.once !== false) {
             observer.disconnect();
           }
@@ -18,22 +22,14 @@ export function useScrollAnimation(options = {}) {
         }
       },
       {
-        threshold: options.threshold || 0.1,
-        rootMargin: options.rootMargin || '0px',
+        threshold: options.threshold ?? 0.1,
+        rootMargin: options.rootMargin || '50px',
       }
     );
 
-    const currentElement = elementRef.current;
-    if (currentElement) {
-      observer.observe(currentElement);
-    }
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, [node, options.threshold, options.rootMargin, options.once]);
 
-    return () => {
-      if (currentElement) {
-        observer.unobserve(currentElement);
-      }
-    };
-  }, [options.threshold, options.rootMargin, options.once]);
-
-  return [elementRef, isVisible];
+  return [setRef, isVisible];
 }

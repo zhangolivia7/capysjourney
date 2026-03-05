@@ -15,12 +15,12 @@ export default function Privacy() {
         <h1 className="text-4xl text-gray-900 mb-8">Privacy Policy</h1>
 
         <p className="mb-8">
-          This privacy policy applies to the Capys Journey app (hereby referred to as "Application") for mobile devices that was created by Rohan Vyas (hereby referred to as "Service Provider") as a Free service. This service is intended for use "AS IS".
+          This privacy policy applies to the Capy's Journey app (hereby referred to as "Application") for mobile devices that was created by Capy's Journey, Inc. (hereby referred to as "Service Provider") as a Free service. This service is intended for use "AS IS".
         </p>
 
         <h2 className="text-2xl text-gray-900 mt-10 mb-4">Information Collection and Use</h2>
         <p className="mb-4">
-          The Application collects information when you download and use it. This information may include information such as
+          The Application collects information when you download and use it. This information may include information such as:
         </p>
         <ul className="list-disc pl-6 mb-4 space-y-1">
           <li>Your device's Internet Protocol address (e.g., IP address)</li>
@@ -52,8 +52,10 @@ export default function Privacy() {
           <li>Google Analytics for Firebase</li>
           <li>Firebase Crashlytics</li>
           <li>Unity</li>
-          <li>Session Replay (Consent-Gated for Users Under 13)</li>
+          <li>PostHog</li>
         </ul>
+
+        <h3 className="text-xl text-gray-900 mt-6 mb-3">Session Replay (Consent-Gated for Users Under 13)</h3>
         <p className="mb-4">
           We use PostHog for product analytics, which may include session replay. For users under 13, session replay is disabled by default and is only enabled after verifiable parental consent (VPC) has been obtained from a parent or legal guardian. When enabled for child users, PostHog is configured to collect replay data in a strictly anonymized mode, meaning it:
         </p>
@@ -65,6 +67,7 @@ export default function Privacy() {
         <p className="mb-4">
           Session replay data for users under 13 is retained only for a limited, short period (no longer than 30 days) and is automatically deleted thereafter. For users 13 and older, replay may be used under standard disclosures and security safeguards, and is only for improving user experience and debugging the Application.
         </p>
+
         <p className="mb-4">
           The Service Provider may disclose User Provided and Automatically Collected Information:
         </p>
@@ -81,19 +84,31 @@ export default function Privacy() {
 
         <h2 className="text-2xl text-gray-900 mt-10 mb-4">Data Retention Policy</h2>
         <p className="mb-4">
-          The Service Provider will retain User Provided data for as long as you use the Application and for a reasonable time thereafter. If you'd like them to delete User Provided Data that you have provided via the Application, please contact them at rohanv2006@gmail.com and they will respond in a reasonable time.
+          The Service Provider will retain User Provided data for as long as you use the Application and for a reasonable time thereafter. If you'd like them to delete User Provided Data that you have provided via the Application, please contact them at team@capysjourney.com and they will respond in a reasonable time.
         </p>
 
-        <h2 className="text-2xl text-gray-900 mt-10 mb-4">Children</h2>
-        <h3 className="text-xl text-gray-900 mt-6 mb-3">Children Under 13 (COPPA Compliance)</h3>
+        <h2 className="text-2xl text-gray-900 mt-10 mb-4">Account Deletion</h2>
         <p className="mb-4">
-          Capy's Journey is a child-directed mindfulness and meditation application. We do not collect personally identifiable information from the child user. Usernames for child profiles are non-identifiable and can be updated at any time.
+          You may request permanent deletion of your account and all associated data at any time by contacting us at team@capysjourney.com. Upon receiving a verified deletion request, we will permanently delete your account and all personally identifiable information associated with it within 30 days. Please note that some anonymized, non-identifiable data may be retained for analytical purposes. For child accounts, a parent or guardian must submit the deletion request. Once deleted, account data cannot be recovered.
+        </p>
+
+        <h2 className="text-2xl text-gray-900 mt-10 mb-4">Children — Children Under 13 (COPPA Compliance)</h2>
+        <p className="mb-4">
+          Capy's Journey is a child-directed application. Children under 13 may only use the Application after a parent or legal guardian has completed the onboarding process, provided their verified email address, and granted explicit consent on the child's behalf. If we become aware that a child under 13 has attempted to access the Application without parental consent, we will take immediate steps to restrict their access and delete any associated data.
+        </p>
+
+        <h3 className="text-xl text-gray-900 mt-6 mb-3">Age Verification at Onboarding</h3>
+        <p className="mb-4">
+          During onboarding, all users are asked to input their age. If a user indicates they are under 13, the Application immediately requires a parent or guardian's email address before proceeding. A verification email is sent to that address via Firebase Authentication, and access to the Application is not granted until the parent or guardian completes email verification. The child user is never asked for their own email address or any other personally identifiable information during this process.
+        </p>
+        <p className="mb-4">
+          We do not collect personally identifiable information from the child user. Usernames for child profiles are non-identifiable and can be updated at any time.
         </p>
         <p className="mb-4">
           For users under 13, accounts are created and managed only using a parent or guardian's email address, and we obtain verifiable parental consent before enabling any optional data syncing or cloud storage.
         </p>
         <p className="mb-4">
-          If we ever discover that personal information belonging to a child under 13 has been submitted outside of the parent onboarding flow, we will delete it immediately. Parents may contact us at the support email:
+          If we ever discover that personal information belonging to a child under 13 has been submitted outside of the parent onboarding flow, we will delete it immediately. Parents may contact us directly at team@capysjourney.com to:
         </p>
         <ul className="list-disc pl-6 mb-4 space-y-1">
           <li>Review data associated with their child's profile</li>
@@ -102,6 +117,20 @@ export default function Privacy() {
         </ul>
         <p className="mb-4">
           We also use industry-standard encryption and secure data handling to protect all parent-linked account information.
+        </p>
+
+        <h2 className="text-2xl text-gray-900 mt-10 mb-4">California Privacy Rights (CCPA)</h2>
+        <p className="mb-4">
+          If you are a California resident, you have the following rights under the California Consumer Privacy Act (CCPA):
+        </p>
+        <ul className="list-disc pl-6 mb-4 space-y-1">
+          <li><strong>Right to Know</strong> — You have the right to request information about the categories and specific pieces of personal data we have collected about you, the sources from which it was collected, the purposes for which it is used, and any third parties with whom it is shared.</li>
+          <li><strong>Right to Delete</strong> — You have the right to request deletion of personal information we have collected from you, subject to certain exceptions permitted by law.</li>
+          <li><strong>Right to Opt-Out</strong> — We do not sell personal information. As such, there is no opt-out required, but you may contact us to confirm this at any time.</li>
+          <li><strong>Right to Non-Discrimination</strong> — We will not discriminate against you for exercising any of your CCPA rights.</li>
+        </ul>
+        <p className="mb-4">
+          To exercise any of these rights, please contact us at team@capysjourney.com. We will respond to verified requests within 45 days as required by law.
         </p>
 
         <h2 className="text-2xl text-gray-900 mt-10 mb-4">Security</h2>
@@ -114,7 +143,7 @@ export default function Privacy() {
           This Privacy Policy may be updated from time to time for any reason. The Service Provider will notify you of any changes to the Privacy Policy by updating this page with the new Privacy Policy. You are advised to consult this Privacy Policy regularly for any changes, as continued use is deemed approval of all changes.
         </p>
         <p className="mb-4">
-          This privacy policy is effective as of 2025-12-30
+          This privacy policy is effective as of 2026-03-05
         </p>
 
         <h2 className="text-2xl text-gray-900 mt-10 mb-4">Your Consent</h2>
@@ -124,7 +153,7 @@ export default function Privacy() {
 
         <h2 className="text-2xl text-gray-900 mt-10 mb-4">Contact Us</h2>
         <p className="mb-8">
-          If you have any questions regarding privacy while using the Application, or have questions about the practices, please contact the Service Provider via email at rohanv2006@gmail.com.
+          If you have any questions regarding privacy while using the Application, or have questions about the practices, please contact the Service Provider via email at team@capysjourney.com.
         </p>
 
         <p className="pt-6 border-t border-amber-200">
