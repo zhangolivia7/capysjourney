@@ -152,7 +152,7 @@ export default function Privacy() {
 
         <h2 className="text-2xl text-gray-900 mt-10 mb-4">Contact Us</h2>
         <p className="mb-8">
-          If you have any questions regarding privacy while using the Application, or have questions about the practices, please contact the Service Provider via email at <a className='text-orange-600 underline' href="mailto:team@capysjourney.com">team@capysjourney.com</a>.
+          If you have any questions regarding privacy while using the Application, or have questions about the practices, please contact the Service Provider via email at team@capysjourney.com.
         </p>
 
         <p className="pt-6 border-t border-amber-200">

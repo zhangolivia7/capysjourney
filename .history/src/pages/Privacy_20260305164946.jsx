@@ -49,9 +49,10 @@ export default function Privacy() {
           Please note that the Application utilizes third-party services that have their own Privacy Policy about handling data. Below are the links to the Privacy Policy of the third-party service providers used by the Application:
         </p>
         <ul className="list-disc pl-6 mb-4 space-y-1">
-          <li><a className='text-orange-600 underline' href='https://firebase.google.com/support/privacy' target="_blank">Firebase</a></li>
-          <li><a className='text-orange-600 underline' href='https://unity.com/legal/privacy-policy' target="_blank">Unity</a></li>
-          <li><a className='text-orange-600 underline' href='https://posthog.com/privacy' target="_blank">PostHog</a></li>
+          <li><a class="privacyLink" href='https://firebase.google.com/support/privacy'>Google Analytics for Firebase</a></li>
+          <li><a class="privacyLink" href='https://firebase.google.com/support/privacy'>Firebase Crashlytics</a></li>
+          <li><a class="privacyLink" href='https://unity.com/legal/privacy-policy'>Unity</a></li>
+          <li><a class="privacyLink" href='https://posthog.com/privacy'>PostHog</a></li>
         </ul>
 
         <h3 className="text-xl text-gray-900 mt-6 mb-3">Session Replay (Consent-Gated for Users Under 13)</h3>
@@ -152,7 +153,7 @@ export default function Privacy() {
 
         <h2 className="text-2xl text-gray-900 mt-10 mb-4">Contact Us</h2>
         <p className="mb-8">
-          If you have any questions regarding privacy while using the Application, or have questions about the practices, please contact the Service Provider via email at <a className='text-orange-600 underline' href="mailto:team@capysjourney.com">team@capysjourney.com</a>.
+          If you have any questions regarding privacy while using the Application, or have questions about the practices, please contact the Service Provider via email at team@capysjourney.com.
         </p>
 
         <p className="pt-6 border-t border-amber-200">
