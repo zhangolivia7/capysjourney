@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Secrets — never commit
+scripts/service-account.json
+**/service-account*.json

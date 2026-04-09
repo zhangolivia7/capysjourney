@@ -32,7 +32,7 @@ export default function Privacy() {
           The Application does not gather precise information about the location of your mobile device.
         </p>
         <p className="mb-4">
-          The Service Provider may use the information you provided to contact you from time to time to provide you with important information, required notices and marketing promotions. For users under 13, any required notices or promotional messages are sent only to the parent or guardian's verified email and are never based on behavioral profiling, personalized tracking, or persistent identifiers from the child user.
+          The Service Provider may use the information you provided to contact you from time to time to provide you with important service updates and required notices. For users under 13, any required notices are sent only to the parent or guardian's verified email and are never based on behavioral profiling, personalized tracking, or persistent identifiers from the child user.
         </p>
         <p className="mb-4">
           For a better experience, while using the Application, the Service Provider may require you to provide us with certain personally identifiable information, including email, age, and username. For users under 13, we may only request email from a verified parent or guardian during onboarding. We never request or require this information from the child user. Child profiles remain anonymous and use non-personally identifiable usernames. The information that the Service Provider requests will be retained by them and used as described in this privacy policy.
@@ -54,6 +54,20 @@ export default function Privacy() {
           <li><a className='text-orange-600 underline' href='https://posthog.com/privacy' target="_blank">PostHog</a></li>
         </ul>
 
+        <h3 className="text-xl text-gray-900 mt-6 mb-3">What Our Third-Party Services Collect</h3>
+        <p className="mb-4">
+          To help you understand exactly what data flows where, here is a plain-language summary of each third-party service we use:
+        </p>
+        <p className="mb-4">
+          <strong>Firebase (Google):</strong> Used for parent account authentication (email address only) and database storage of app progress. Firebase Analytics is disabled. No data about child users is sent to Firebase Analytics.
+        </p>
+        <p className="mb-4">
+          <strong>PostHog:</strong> Used for anonymous product analytics events (e.g., which mini-games are played, session length). For users under 13, no IP address, device identifier, or personal information is collected or transmitted. PostHog data is not linked to any individual account.
+        </p>
+        <p className="mb-4">
+          <strong>Unity:</strong> Game engine. Unity Analytics and Unity Ads are not enabled in the Application.
+        </p>
+
         <h3 className="text-xl text-gray-900 mt-6 mb-3">Session Replay (Consent-Gated for Users Under 13)</h3>
         <p className="mb-4">
           We use PostHog for product analytics, which may include session replay. For users under 13, session replay is disabled by default and is only enabled after verifiable parental consent (VPC) has been obtained from a parent or legal guardian. When enabled for child users, PostHog is configured to collect replay data in a strictly anonymized mode, meaning it:
@@ -73,22 +87,31 @@ export default function Privacy() {
         <ul className="list-disc pl-6 mb-4 space-y-1">
           <li>as required by law, such as to comply with a subpoena, or similar legal process;</li>
           <li>when they believe in good faith that disclosure is necessary to protect their rights, protect your safety or the safety of others, investigate fraud, or respond to a government request;</li>
-          <li>with their trusted services providers who work on their behalf, do not have an independent use of the information we disclose to them, and have agreed to adhere to the rules set forth in this privacy statement.</li>
+          <li>with their trusted service providers who work on their behalf, do not have an independent use of the information we disclose to them, and have agreed to adhere to the rules set forth in this privacy statement.</li>
         </ul>
 
         <h2 className="text-2xl text-gray-900 mt-10 mb-4">Opt-Out Rights</h2>
         <p className="mb-4">
-          You can stop all collection of information by the Application easily by uninstalling it. You may use the standard uninstall processes as may be available as part of your mobile device or via the mobile application marketplace or network.
+          You can stop all collection of information by the Application easily by uninstalling it. You may use the standard uninstall processes that may be available as part of your mobile device or via the mobile application marketplace or network. To delete data already collected, use the in-app account deletion flow described below.
         </p>
 
         <h2 className="text-2xl text-gray-900 mt-10 mb-4">Data Retention Policy</h2>
         <p className="mb-4">
-          The Service Provider will retain User Provided data for as long as you use the Application and for a reasonable time thereafter. If you'd like them to delete User Provided Data that you have provided via the Application, please contact them at team@capysjourney.com and they will respond in a reasonable time.
+          The Service Provider will retain User Provided data for as long as you use the Application and for a reasonable time thereafter. You may permanently delete your account and all associated data at any time directly within the app — see the Account Deletion section below for details.
         </p>
 
         <h2 className="text-2xl text-gray-900 mt-10 mb-4">Account Deletion</h2>
         <p className="mb-4">
-          You may request permanent deletion of your account and all associated data at any time by contacting us at team@capysjourney.com. Upon receiving a verified deletion request, we will permanently delete your account and all personally identifiable information associated with it within 30 days. Please note that some anonymized, non-identifiable data may be retained for analytical purposes. For child accounts, a parent or guardian must submit the deletion request. Once deleted, account data cannot be recovered.
+          You may permanently delete your account and all associated data at any time directly within the app. To do so, open Settings, complete the parental gate, tap Account, then tap Delete Account and confirm.
+        </p>
+        <p className="mb-4">
+          Account deletion is immediate. All personally identifiable information associated with the account — including parent email address, child profile data, app progress, and any cloud-stored content — is permanently removed from our systems. Some fully anonymized, non-identifiable analytics data may be retained for service improvement purposes; this data cannot be linked back to any individual user or account.
+        </p>
+        <p className="mb-4">
+          For child accounts, the parent or guardian who created the account should initiate the deletion through the in-app flow. If you are unable to access the app for any reason and need assistance with deletion, you may contact us at team@capysjourney.com as a backup option, and we will process your request within 30 days.
+        </p>
+        <p className="mb-4">
+          Once deleted, account data cannot be recovered.
         </p>
 
         <h2 className="text-2xl text-gray-900 mt-10 mb-4">Children — Children Under 13 (COPPA Compliance)</h2>
@@ -134,7 +157,7 @@ export default function Privacy() {
 
         <h2 className="text-2xl text-gray-900 mt-10 mb-4">Security</h2>
         <p className="mb-4">
-          The Service Provider is concerned about safeguarding the confidentiality of your information. The Service Provider provides physical, electronic, and procedural safeguards to protect information the Service Provider processes and maintains.
+          The Service Provider is concerned about safeguarding the confidentiality of your information. The Service Provider provides physical, electronic, and procedural safeguards to protect information that the Service Provider processes and maintains.
         </p>
 
         <h2 className="text-2xl text-gray-900 mt-10 mb-4">Changes</h2>
@@ -142,7 +165,7 @@ export default function Privacy() {
           This Privacy Policy may be updated from time to time for any reason. The Service Provider will notify you of any changes to the Privacy Policy by updating this page with the new Privacy Policy. You are advised to consult this Privacy Policy regularly for any changes, as continued use is deemed approval of all changes.
         </p>
         <p className="mb-4">
-          This privacy policy is effective as of 2026-03-05
+          This privacy policy is effective as of 04/08/2026
         </p>
 
         <h2 className="text-2xl text-gray-900 mt-10 mb-4">Your Consent</h2>
