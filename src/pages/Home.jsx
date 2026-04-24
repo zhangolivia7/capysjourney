@@ -1,12 +1,11 @@
-import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
-import { WaitlistModal } from '../components/WaitlistModal';
 import { AnimatedSection } from '../components/AnimatedSection';
 import { useParallax } from '../hooks/useParallax';
 import { Play, Sparkles, Heart, Brain, Trophy, Mail } from 'lucide-react';
 import appStoreBadge from '../assets/App Store.svg';
-import googlePlayBadge from '../assets/Google Play.svg';
+
+const APP_STORE_URL = 'https://apps.apple.com/us/app/capys-journey/id6760802602';
 import logo from '../assets/LOGO.png';
 import lessonsImg from '../assets/lessons.png';
 import dailyImg from '../assets/daily.png';
@@ -14,7 +13,6 @@ import capyCollectionImg from '../assets/capy collection.png';
 import capyLaunchVid from '../assets/CapyLaunchVid.mov';
 
 export default function Home() {
-  const [isWaitlistModalOpen, setIsWaitlistModalOpen] = useState(false);
   const heroParallax = useParallax(0.15);
 
   return (
@@ -40,15 +38,11 @@ export default function Home() {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 items-center">
-                <button
-                  onClick={() => setIsWaitlistModalOpen(true)}
-                  className="inline-flex items-center justify-center px-8 py-4 bg-amber-600 text-white rounded-xl hover:bg-amber-700 transition-colors font-semibold shadow-lg"
-                >
-                  Join the Waitlist
-                </button>
-                {/* <a
-                  href="#"
-                  className="inline-flex items-center justify-center rounded-xl hover:opacity-90 transition-opacity"
+                <a
+                  href={APP_STORE_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center rounded-xl hover:opacity-90 transition-opacity focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-600 focus-visible:ring-offset-2"
                   aria-label="Download on the App Store"
                 >
                   <img
@@ -57,17 +51,6 @@ export default function Home() {
                     className="h-14 w-auto"
                   />
                 </a>
-                <a
-                  href="#"
-                  className="inline-flex items-center justify-center rounded-xl hover:opacity-90 transition-opacity"
-                  aria-label="Get it on Google Play"
-                >
-                  <img
-                    src={googlePlayBadge}
-                    alt="Get it on Google Play"
-                    className="h-14 w-auto"
-                  />
-                </a> */}
               </div>
             </AnimatedSection>
             
@@ -332,13 +315,20 @@ export default function Home() {
             Start your mindfulness journey with Capy's Journey today
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button
-              onClick={() => setIsWaitlistModalOpen(true)}
-              className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white text-gray-900 rounded-xl hover:bg-gray-50 transition-colors font-semibold shadow-lg"
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a
+              href={APP_STORE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center rounded-xl hover:opacity-95 transition-opacity focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-orange-500"
+              aria-label="Download on the App Store"
             >
-              Join the Waitlist
-            </button>
+              <img
+                src={appStoreBadge}
+                alt="Download on the App Store"
+                className="h-14 w-auto"
+              />
+            </a>
             <button 
               onClick={() => {
                 document.getElementById('demo')?.scrollIntoView({ behavior: 'smooth' });
@@ -382,11 +372,6 @@ export default function Home() {
         </div>
       </footer>
 
-      {/* Waitlist Modal */}
-      <WaitlistModal
-        isOpen={isWaitlistModalOpen}
-        onClose={() => setIsWaitlistModalOpen(false)}
-      />
     </div>
   );
 }
